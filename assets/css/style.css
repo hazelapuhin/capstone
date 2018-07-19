@@ -1,189 +1,189 @@
-/*ALL*/
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
     width: 100%;
-    color: black;
-    overflow: hidden;
-
-}
-
-/*NAVBOX*/
-/*.navbar {
-    position: fixed;
-    width: 100%;
-}
-
-.row {
-    position: fixed;
-    float: right;
-}
-
-
-.fab {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.fab:hover {
-    opacity: 0.7;
-}
-
-
-.fa-facebook {
-    background: grey;
-    color: white;
-}
-
-
-.fa-twitter {
-    background: grey;
-    color: white;
-}
-
-
-.fa-google {
-    background: grey;
-    color: white;
-}
-
-
-.fa-youtube {
-    background: grey;
-    color: white;
-}
-*/
-
-.navbar{
-   /* opacity: 0.5;*/
-    background-attachment: none;
-    position: relative;
-
+    color: lightblue;
+    overflow: auto;
 }
 
 .background {
     height: 100vh;
-    background-color: grey;
-   /* width: 100%;*/
-    background-image: url(../images/mainbg.jpg);
+    background-color: black;
+    background-image: url(../images/wifi.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+ }
 .container-fluid {
     position: relative;
-    height: 100%;
-   
+    
 }
 #box1 {
     text-align: center;
     float: left;
     position: relative;
-    padding: 25px;
+
 }
 
 .row {
     position: relative;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }
 
 #box1  #me {
     height: 200px;
     width: 200px;
-    margin: 15% auto;
-    margin-bottom: 0; 
-    /*transform: translate(-50%, -50%);*/
+    margin: auto;
     position: relative;
     min-width: 992px
     max-width: 50%;
-    -ms-flex: 0 0 50%;
     border-radius: 50%;
-    border:5px solid white;
+    border: 3px inset white;
 }
 
-h1 {
-    margin-top: 20px;
+#yellow {
+    color: yellow;
 }
-.photo-text {
-    background-color: white;
-    opacity: 0.7;
-    max-height: 100px;
-    overflow: hidden;
 
+#blue {
+    color: blue;
+}
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
+
+#orange {
+    color: orange;
+}
+
+#violet {
+    color: violet;
 }
 
 #box2 {
     float: left;
     position: relative;
     width: 100%;
-    height: 85vh;  
+    height: 80vh;  
     margin: auto;
-        
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 60s;
+
+    background-image: url("../images/world.gif");
+    background-size: 75%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image: cover;
-    animation-iteration-count: infinite;
-   
 }
 
 .container-fluid .btn {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: grey;
     color: black;
     font-size: 16px;
     padding: 15px 24px;
-    border: 7px outset white;
+    border: 15px outset white;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 25px 0px;
     text-align: center;
     z-index: 10;
     width: auto;
     margin: auto; 
+    font-family: 'Bungee Inline', cursive;
 }
 
 .btn:hover {
-    background-color: red;
+    background-color: grey;
+    color: white;
+    opacity: 0.9;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+
+}
+
+h2 {  
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+ 
+}
+
+/* Style all fontawesome icons */
+
+.navbar-brand {
+    width: 30%;
+    float: left;    
+}
+
+.socmed {
+    float: left;
+    text-anchor: block;
+    display: block;
+    margin: 5px;
+    outline: 5px;
+}
+
+.fab {
+    padding: 3px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    border-radius: 30% 0%;
+    background: grey;
+    border: 3px solid lightblue;
+    margin-right: 3px;
+ }
+
+.fab:hover {
+    opacity: 0.5;
+    background-color: grey;
+}
+
+.fa-facebook {
+    background: grey;
     color: white;
 }
 
-
-@keyframes example {
-   /* from {background-image: url("../images/skydive.jpg");}
-    to {background-image: url("../images/bg.jpg");}*/
-    10% {background-image: url("../images/windsor.jpg");}
-    15% {background-image: url("../images/apo.jpg");}
- /*   20% {background-image: url("../images/koln.jpg");}*/
-    25% {background-image: url("../images/cambodia.jpg");}
-    30% {background-image: url("../images/belgium.jpg");}
-    35% {background-image: url("../images/climb.jpg");}
-    40% {background-image: url("../images/kalinga.jpg");}
-    45% {background-image: url("../images/dragonboat.jpg");}
-    50% {background-image: url("../images/stonehenge.jpg");}
-    55% {background-image: url("../images/singa.jpg");}
-    60% {background-image: url("../images/surrey.jpg");}
-    65% {background-image: url("../images/surf.jpg");}
-    70% {background-image: url("../images/skydive.jpg");}
-    75% {background-image: url("../images/vietnam.jpg");}
-    80% {background-image: url("../images/dbxbg.jpg");}
-    85% {background-image: url("../images/burj.jpg");}
-    90% {background-image: url("../images/bigben.jpg");}
-   /* 92% {background-image: url("../images/ukbg.jpg");}*/
-
+.fa-twitter {
+    background: grey;
+    color: white;
 }
 
+.fa-google {
+    background: grey;
+    color: white;
+}
 
+.fa-youtube {
+    background: grey;
+    color: white;
+}
+
+.fa-github {
+    background: grey;
+    color: white;
+}
+
+.fa-gitlab {
+    background: grey;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+}
 
 @media (max-width: 768px) {
   .navbar:not(#topnav-collapse) {

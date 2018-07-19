@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <!-- updated required  meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale= 1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" contenteditable="IE=Edge">
+
+	<title>Sign-up and Log in</title>
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/signup.css">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Orbitron|Press+Start+2P|Ultra" rel="stylesheet">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+ 
+	<header class="box col-lg-12 col-md-12 col-sm-12"> <!-- headerbox -->
+
+		 <!-- logo -->
+		<div class="box col-lg-12 col-md-12 col-sm-12">
+			<img src="assets/images/wifilogo.gif" id="logo">
+
+		<!-- login -->
+			<div class="box col-lg-12 col-md-12 col-sm-12">
+				<button id="login" onclick="document.getElementById('id01').style.display='block'">Login
+				</button>
+			</div>
+
+		</div>
+
+		<!-- login modal -->
+		<div class="box col-lg-12 col-md-10 col-sm-12"> 
+			
+			<div id="id01" class="modal">
+	  
+	 			<form class="modal-content animate" action="/action_page.php">
+	   		 		<div class="imgcontainer">
+	      				<img src="assets/images/wifilogo.gif" alt="Avatar" class="avatar"> 
+	      				<p onclick="document.getElementById('id01').style.display='none'" class="exit">X</p>
+	   				</div>
+
+	   				<div class="container">
+					    <label for="uname"><b>Username</b></label>
+					    <input type="text" placeholder="Enter Username" name="uname" required>
+
+					    <label for="psw"><b>Password</b></label>
+					    <input type="password" placeholder="Enter Password" name="psw" required>
+					        
+					    <button type="submit">Connect</button>
+					    <label>
+					    <input type="checkbox" checked="checked" name="remember">Remember me 
+						</label>
+
+					</div>
+
+					<div class="container">
+					    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					      <span class="psw"><a href="#">Forgot password?</a></span>
+					</div>
+	  			</form>
+			</div>
+		</div>
+	</header>
+
+	<body class="container-fluid" id="body">
+		<div id="grad1">
+		<div class="box col-lg-12 col-md-12 col-sm-12">
+			<div class="box col-lg-6 col-md-12 col-sm-12" id="box1">
+				<h4><span id="blue"><strong>Stay connected</strong> to online world with</span></h4>
+				<h3><span id="yellow"><strong> WiFipedia</strong></span></h3>
+				<p><strong>Your WiFi info crawler in and around the PH.</strong></p>
+
+				<ul class="benefits">	
+					<li><p>Have access to the the internet speed info of the place you will visit</p></li>
+					<li><p>Get the latest internet deals from the country's big internet service providers</p></li>
+					<li><p>Join the community, read and share travel hacks and deals.</p></li>
+					<li><p>Know what is trending in our travel community</p></li>
+					<li><p>Participate and share your own experience about country's top-destinations' internet speed</p></li>
+				</ul>
+			
+				<p><h4>Remember, the best tool we have is each other</h4>
+			</p>
+		</p>
+			</div>
+				<form class="box col-lg-6 col-md-12 col-sm-12"action="action_page.php" id="box2">
+
+					<div>
+					<div class="container">
+
+	   			 	<h2><span id="blue">SIGN-UP.</span></h2>
+
+	   			 	<p><span id="white"> It's FREE and always will be</span></p>
+	   			 	</div>
+	   			 		    			
+	    			<label for="email"><b>Email</b></label>
+	    			<input type="text" placeholder="Enter Email" name="email" required>
+
+	    			<label for="psw"><b>Password</b></label>
+	    			<input type="password" placeholder="Enter Password" name="psw" required>
+
+	    			<label for="psw-repeat"><b>Repeat Password</b></label>
+	    			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+	    			<p><label><input type="checkbox" checked="checked" name="remember"> Remember me
+	    			</label></p>
+
+	    			<label for="net-speed"><b>Upload Speed</b></label>
+	    			<input type="number" required name="price" min="0" value="0" step="any" required>
+					<label for="net-speed"><b>Download Speed </b></label>
+	    			<input type="number" required name="price" min="0" value="0" step="any" required>
+
+	    			<p>By creating an account you agree to our<a href="#"	> Terms Data Policy and Cookies Policy</a>.</p>
+	    			<div class="clearfix">
+	    			<button type="submit" class="signupbtn">Sign Up</button>
+	    			</div>
+
+					</div>
+				</form>
+			</div>
+			</div>
+		</body>
+	</div>
+
+<!-- footer -->
+<footer class="container-fluid">
+
+		<div class="row col-lg-12 col-md-12 col-sm-12" id="footer">
+
+			<!-- explore -->
+			<div class="row col-lg-3 col-md-6 col-sm-12" id="footerexplore">
+				<ul>
+					<li>About WIFIpedia</li>
+					<li>FAQ's</li>
+					<li>Travel Hacks</li>
+				</ul>
+			</div>
+
+			<!-- business partners -->
+			<div class="row col-lg-3 col-md-6 col-sm-12" id="businesspartners">		
+				<ul>
+					<li>Write A Review</li>
+					<li>Join The Travellers Online Community</li>
+					<li>Travellers' Choice</li>
+					<li>Help Center</li>
+				</ul>
+			</div>
+
+			<div class="row col-lg-3 col-md-6 col-sm-12" id="businesspartners">		
+				<ul>
+					<li>Owners/Partners</li>
+					<li>List Your Business</li>
+					<li>Advertise With Us</li>
+				</ul>
+			</div>
+
+			<div class="row col-lg-3 col-md-6 col-sm-12" id="businesspartners">		
+				<ul>
+					<li>fb</li>
+					<li>google +</li>
+					<li>twitter</li>
+					<li>youtube</li>
+					<li>pinterest</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12" id="disclaimer">
+					<p>© 2018 Hazel Apuhin Online Marketing Programs and Services, All Rights Reserved. Terms of Use | Privacy Policy | Cookie Policy | Site Map </p>
+					<p>WiFipedia is owned and run by Hazel Apuhin under PH law and registered under the business name of Hazel Apuhin Online Marketing Programs and Services</p>
+					<p>WiFipedia is the WI-FI info authority in the Philippines for your online travel information & related services.</p>
+					<p>WiFipedia is not a booking agent or tour operator, and does not charge any service fees to users of our site. Our partners (airlines, hotels, restaurants, travel providers, and booking agents) who list airfare, tours, and travel packages on WiFipedia are required to include all fees and surcharges in their listed prices. Examples include the international departure and arrival taxes and fees, federal excise tax, and other service, handling and miscellaneous fees and surcharges. When you book with one of our partners, please be sure to check their site for a full disclosure of all applicable fees as required by the PH laws. Airfares are generally quoted per person in PHP unless otherwise noted.
+					</p>
+					<p>Furthermore, WiFipedia makes no guarantees for availability of prices advertised on our site. Listed prices may require a stay of a particular length or have blackout dates, qualifications or restrictions.
+					</p>
+					<p>WiFipedia is not responsible for content 	on external web sites. Taxes, fees not included for deals content
+					</p>
+				</div>
+			</div> 
+
+		</div>
+</footer>
+
+	<!-- jquery first, then popper.js, then bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+	<!-- external bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+</html>
