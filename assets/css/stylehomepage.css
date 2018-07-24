@@ -407,7 +407,19 @@ img:hover {
   transform: rotateY(360deg);
 }
 
-
+@media screen and (max-width: 1024px) {
+#search-container{
+    padding-left:0;
+    margin-left:0;
+}
+.carousel-inner{
+    width: 100%;
+}
+.search{
+    margin:0;
+    padding:0;
+}
+}
 @media screen and (max-width: 900px) {
     .column {width: 100%;}
     .topnav a:not(:first-child) {display: none;}
@@ -415,7 +427,7 @@ img:hover {
     float: right;
     display: block;
 }
-
+}
 @media screen and (max-width: 600px) {
     .column {width: 100%;}
     .topnav a:not(:first-child) {display: none;}
@@ -435,6 +447,15 @@ img:hover {
 }
     .socmed {
     display: none;
+    }
+    #search-container{
+        padding-left:0;
+        margin-left:0;
+    }
+    .carousel-inner{
+     height: 30vh;
+     margin-top: 10% !important;
+     width: 100%;
     }
 }
 

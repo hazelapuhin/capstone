@@ -103,6 +103,27 @@ button:hover {
   	width: 100%;
   	height: auto;
   }
+  .img-comp-img img {
+    width: 100%;
+  }
+  .img-comp-img img {
+    width: 100% !important;
+  }
+  .w3-container.col-lg-6.col-md-12.col-12 {
+    position: relative !important;
+ }
+ .button-below {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+html, body{
+  height: 100% !important;
+}
+.main {
+    height: 200% !important;
+    overflow-y: scroll !important;
+}
 }
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(#topnav-collapse) {

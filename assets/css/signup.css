@@ -283,12 +283,24 @@ footer {
     .column {
         width: 100%;
     }
+    .box{
+        display: contents;
+        width: 100%;
+    }
+    #grad1{
+        height: 110% !important;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1366px) {
     .column {
         width: 100%;
+    }
+   #grad1{
+        padding: 15px;
+        height: 65%;
+        overflow-y: hidden;
     }
 }
 
