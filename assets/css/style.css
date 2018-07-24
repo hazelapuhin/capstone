@@ -14,9 +14,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
  }
 .container-fluid {
-    position: relative;
+    position: fixed;
     
 }
 #box1 {

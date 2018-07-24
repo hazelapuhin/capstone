@@ -10,257 +10,653 @@
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/stylehomepage.css">
 
 	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Orbitron|Press+Start+2P|Ultra" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poor+Story|Roboto" rel="stylesheet">
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- RESPONSIVE TOP NAV -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-<div id="grad1">
-	<div class="container-fluid col-lg-12 col-md-12 col-12"> 
-		<!-- header -->
-		<header class="row header"> 
-			<!-- logo and socmed -->
-			<div class="row col-lg-12 col-md-12 col-12"><img src="assets/images/wifilogo.gif" id="logo">
-			
-			<div class="row col-lg-11 col-md-10 col-sm-12" id="socmed">
-					<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
-					<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
-					<a href="#" class="google"><i class="fab fa-google-plus-square"></i></a>
-				  	<a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a>
-					<a href="#" class="github"><i class="fab fa-github-square"></i></a>	
-			</div>	
-			</div> <!-- end of socmed -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+	<div id="grad1">
 		
-		</header>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
 
-			<nav class="container-fluid col-lg-12 col-md-12 col-12">
-			<div class="row col-lg-12 col-md-12 col-12" id="menu">
-				<ul class="nav">
-					<li class="active"><a href="#contact">Home</a></li>
-					<li><a href="#contact">Regions</a></li>
-  					<li><a href="#home">Airports</a></li>
-  					<li><a href="#about">Hotels</a></li>
-  					<li><a href="#clients">Restaurants</a></li> 
-  					
-				</ul>
-			</div>
-			</nav>
+		function scrollFunction() {
+    	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+   		}	
+    	else {
+        document.getElementById("myBtn").style.display = "none";
+    		}
+		}
 
-	</div> <!-- grad 1 closing -->
-
-	<!-- content -->
-<div class="container-fluid" id="search-container">
-	<form class="search py-auto">
-  		<div class="input-group">
-  			<input type="text" class="form-control" placeholder="Your PH destination..." name="search">
-  			<div class="input-group-btn">
-  				<button class="btn btn-default" type="submit">
-  				<i class="fas fa-search"></i>
-   				</button>
-  			</div>
-  		</div>
-	</form>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row-box col-lg-12 col-md-12 col-12" id="bigbox">
-
-<!--1st row -->
-	<p>Regions</p>
-<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-    </div>
-   	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-
-  <!-- second row -->
-	<p>Airports</p>
-<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-    </div>
-   	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
+			// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+   		document.body.scrollTop = 0;
+    	document.documentElement.scrollTop = 0;
+		}
+		</script>
 
 
-	<!-- third row -->
-	<p>Hotels</p>
 
-	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-    </div>
-   	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
+		<div class="container-fluid col-lg-12 col-md-12 col-12"> 
 
-  	<!-- fourth row -->
-	<p>Restaurants</p>
+			<!-- header -->
+			<header class="container-fluid" id="header"> 
 
-   	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-    </div>
-   	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
-  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
-    <div class="content">
-      <img src="assets/images/koln.jpg" alt="koln" style="width:90%">
-      <h3>My Work</h3>
-      <p><span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star"></span>
-		<span class="fas fa-star-half-alt"></span>
-		<span class="far fa-star"></span></p>
-		<p>address
-    </div>
-  	</div>
+				<!-- logo  -->
+				<div class="row col-lg-12 col-md-12 col-12">
+					<img src="assets/images/wifilogo.gif" id="logo">
+					<img src="assets/images/wifipedia.png" id="wifipedia">
+					<div class="welcome"> Welcome | <a href="">Hazel <i class="fas fa-user-circle"></i> </a></div>
+				</div>
 
-<!-- END GRID -->
+				<div class="socmed col-lg-12 col-md-1 col-1" id="socmed">
+						<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="google"><i class="fab fa-google-plus-square"></i></a>
+					  	<a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a>
+						<a href="#" class="github"><i class="fab fa-github-square"></i></a>	
+				</div>	
+				</div> <!-- end of socmed -->	
 
 
-</div> <!-- end of container -->
-</div> <!-- end of grad1 (colored background) -->
+			</header>
+
+					<div class="topnav" id="myTopnav">
+					  <a href="#home" class="active">Home</a>
+					  <a href="#news">Wifipedians Pick</a>
+					  <a href="#contact">Write A Review</a>
+					  <a href="#about">Internet Promo</a>
+					  <a href="profile.html">My Profile</a>
+				  <!-- <div class="dropdown">
+					    <button class="dropbtn">Dropdown 
+					      <i class="fa fa-caret-down"></i>
+					    </button>
+					    <div class="dropdown-content">
+					      <a href="#">Link 1</a>
+					      <a href="#">Link 2</a>
+					      <a href="#">Link 3</a>
+					    </div>
+					  </div>  -->
+
+
+<!-- 					  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+					</div>
+
+					<script>
+					function myFunction() {
+					    var x = document.getElementById("myTopnav");
+					    if (x.className === "topnav") {
+					        x.className += " responsive";
+					    } else {
+					        x.className = "topnav";
+					    }
+					}
+					</script> -->
+
+		</div>
+
+			<!-- SAERCH AND CAROUSEL BOX -->
+			<div class="container-fluid" id="search-container">
+
+				<!-- CAROUSEL -->
+				<div id="carousel">
+	  	
+				  	<div id="mycarousel" class="carousel slide" data-ride="carousel">
+				  		
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					      	<li data-target="#myCarousel" data-slide-to="1"></li>
+					      	<li data-target="#myCarousel" data-slide-to="2"></li>
+					      	<li data-target="#myCarousel" data-slide-to="3"></li>
+					      	<li data-target="#myCarousel" data-slide-to="4"></li>
+					      	<li data-target="#myCarousel" data-slide-to="5"></li>
+					      	<li data-target="#myCarousel" data-slide-to="6"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					      	<div class="item active">
+					        	<img src="assets/images/promo1.jpg" alt="promo" style="width:100%">
+					      	</div>
+
+					      	<div class="item">
+					        	<img src="assets/images/promo2.jpg" alt="promo" style="width:100%">
+					      	</div>
+					    
+					      	<div class="item">
+					        	<img src="assets/images/promo3.jpg" alt="promo" style="width:100%">
+					      	</div>
+
+					      	<div class="item">
+					        	<img src="assets/images/promo4.png" alt="promo" style="width:100%">
+					      	</div>
+					      	<div class="item">
+					        	<img src="assets/images/promo5.jpg" alt="promo" style="width:100%">
+					      	</div>
+					      	<div class="item">
+					        	<img src="assets/images/promo6.jpg" alt="promo" style="width:100%">
+					      	</div>
+					      	<div class="item">
+					        	<img src="assets/images/promo7.jpg" alt="promo" style="width:100%">
+					      	</div>
+					      	
+					    </div>
+
+					</div> 
+				</div> <!-- END OF CAROUSEL -->
+<hr>
+				
+				<!-- SEARCH -->
+				<form class="search py-auto">
+			  		<div class="input-group">
+			  			<input type="text" class="form-control" placeholder="Search a PH destination..." name="search">
+			  			<div class="input-group-btn">
+			  				<button class="btn btn-default" type="submit">
+			  				<i class="fas fa-search"></i>
+			   				</button>
+			  			</div>
+			  		</div>
+				</form>
+
+		  	</div> <!-- END OF SEARCH AND CAROUSEL -->
+
+
+			<!-- GALLERY -->
+			<div class="row-box col-lg-12 col-md-12 col-12" id="bigbox">
+
+				<!--FIRST ROW | REGIONS -->
+					<div class="label col-lg-12 col-md-12"><p>Top Cities</p></div>
+					<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/manila.jpg" alt="manila" style="width:100%">
+				    			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>354</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>545</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>324</a>
+	                                    </div>
+	                                </div>
+	                            </div>  					
+				      <h3>Manila</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span> <a href="#"> 306 reviews</a></p>
+						<p><small>National Capital Region (NCR)</small></p>
+				    </div>
+				    </div>
+				   
+				   	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/cebu.jpg" alt="cebu" style="width:100%">
+								<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>323</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>41</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>324</a>
+	                                    </div>
+	                                </div>
+	                            </div>  			     	
+				      <h3>Cebu</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 197 reviews</a></p>
+						<p><small>Central Visayas (Region VII)</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/bacolod.jpg" alt="bacolod" style="width:100%">
+				    				<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>543</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>63</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>324</a>
+	                                    </div>
+	                                </div>
+	                            </div>  	 
+				      <h3>Bacolod</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 453 reviews</a></p>
+						<p><small> Western Visayas‎ (Region VI)</small></p>
+				    </div>
+					</div>
+					<div><button class="btn"> <a href="#">see more</a></button></div>
+				
+
+			 	<!-- SECOND ROW | AIRPORTS-->
+			 	 	<div class="label col-lg-12 col-md-12 col-12"><p>Top Airports</p></div>
+					<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/airport1.jpg" alt="airport" style="width:100%">
+
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>98</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>67</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>NAIA</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 22 reviews</a></p>
+						<p><small>Manila</small></p>
+				    </div>
+				    </div>
+
+				   	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/airport2.jpg" alt="airport" style="width:100%">
+								<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>765</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>878</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>			      			
+				      <h3>Ilo-Ilo</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 54 reviews</a></p>
+						<p><small>Ilo-Ilo</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/airport3.jpg" alt="airport" style="width:100%">
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>54</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>175</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Puerto Princesa</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 340 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/airport4.jpg" alt="airport" style="width:100%">
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>812</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>73</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Airport IV</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 65 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+			  		</div>
+					<div><button class="btn"> <a href="#">see more</a></button></div>
+				
+
+				<!--THIRD ROW | HOTELS -->
+					<div class="label col-lg-12 col-md-12 col-12"><p>Top Hotels</p></div>
+					<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/hotel1.jpg" alt="hotel" style="width:100%">
+				    			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>41</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>612</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Your Hotel</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span> <a href="#"> 306 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+				    </div>
+				   
+				   	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/hotel2.jpg" alt="hotel" style="width:100%">
+				    			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>321</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>89</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Your Hotel</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 197 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-4 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/hotel3.jpg" alt="hotel" style="width:100%">
+				    					<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>67</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>345</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>52</a>
+	                                    </div>
+	                                </div>
+	                            </div>  	
+				      <h3>Your Hotel</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 67 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+					</div>
+					<div><button class="btn"> <a href="#">see more</a></button></div>
+					
+			 	<!-- FOURTH ROW | RESTO-->
+			 	 	<div class="label col-lg-12 col-md-12 col-12"><p>Top Restaurants</p></div>
+					<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/resto1.jpg" alt="resto" style="width:100%">
+
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>912</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>54</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Your Restaurant</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 893 reviews</a></p>
+						<p><small>Manila</small></p>
+				    </div>
+				    </div>
+
+				   	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/resto2.jpg" alt="resto" style="width:100%">
+								<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>323</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>897</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>			      			
+				      <h3>Your Restaurant</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 129 reviews</a></p>
+						<p><small>Ilo-Ilo</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/resto3.jpg" alt="resto" style="width:100%">
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>76</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>78</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Your Restaurant</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 242 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+				  	</div>
+
+				  	<div class="column col-lg-3 col-md-12 col-12" id="smallbox">
+				    <div class="content">
+				      <img src="assets/images/resto4.jpg" alt="resto" style="width:100%">
+				      			<div class="post-meta d-flex">
+	                             <!-- Post Comment & Share Area -->
+	                                <div class="post-comment-share-area d-flex">
+	                                    <!-- Post Favourite -->
+	                                    <div class="post-favourite">
+	                                        <a href="#"><i class="far fa-heart"></i>224</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Comments -->
+	                                    <div class="post-comments">
+	                                        <a href="#"><i class="far fa-comment"></i>34</a>
+	                                    </div>
+	                                    <br>
+	                                    <!-- Post Share -->
+	                                    <div class="post-share">
+	                                        <a href="#"><i class="fas fa-share-alt"></i>12</a>
+	                                    </div>
+	                                </div>
+	                            </div>
+				      <h3>Your Restaurant</h3>
+				      <p><span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span><a href="#"> 432 reviews</a></p>
+						<p><small>address</small></p>
+				    </div>
+			  		</div>
+					<div><button class="btn"> <a href="#">see more</a></button></div>
+
+			</div> <!-- END GALLERY -->
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+	</div> <!-- END OF GRAD 1 (colored background) -->
 
 </body>
+
 
 <!-- footer -->
 <footer class="container-fluid">
@@ -315,8 +711,14 @@
 				</div>
 			</div> 
 		</div>
+
 </footer>
+
 	<!-- jquery first, then popper.js, then bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
